@@ -6,11 +6,9 @@ testarray = ["a", "b", "c", "d", "e", "f", "g"]
 
 # defines the function
 def arraysearch(inputArray):
-    # gets length of array
-    arraylen = len(inputArray)
-    #gets the index by using length of array [-1 for python because it starts at 0], the random value the array uses
-    index = random.randint(0, arraylen-1)
-    # returns the random value from the array
-    return inputArray[index]
+    arraylen = len(inputArray)  # gets length of array
+    index = random.randint(0, arraylen-1) # random number from array length
+    return inputArray[index]# returns the random value from the array
 
-print(arraysearch(testarray))
+print(arraysearch(testarray)) # prints
+
